@@ -7,129 +7,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box2 {
-            background: red;
-            margin-left: 10px;
-            animation: geeks 5s infinite;
-            margin-top: -20px;
-            
-             /* clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%,37% 51%, 33% 67%, 36% 78%, 58% 79%, 63% 67%, 60% 51%); */
-        }
 
-        @keyframes geeks {
-            0% {
-                margin-left: 50px;
-                margin-top: 160px;
-                width: 240px;
-                height: 220px;
-            }
-
-            20% {
-                margin-left: 170px;
-                margin-top: 150px;
-                width: 240px;
-                height: 220px;
-            }
-
-            35% {
-                margin-left: 390px;
-                margin-top: 160px;
-                width: 240px;
-                height: 220px;
-            }
-
-            45% {
-                margin-left: 232px;
-                margin-top: 160px;
-                width: 240px;
-                height: 220px;
-            }
-
-            51% {
-                margin-left: 232px;
-                margin-top: 160px;
-                width: 240px;
-                height: 220px;
-            }
-
-            54% {
-                margin-left: 240px;
-                margin-top: 160px;
-                width: 240px;
-                height: 220px;
-            }
-
-            57% {
-                margin-left: 232px;
-                margin-top: 160px;
-                width: 240px;
-                height: 220px;
-            }
-
-            60% {
-                margin-left: 240px;
-                margin-top: 160px;
-                width: 240px;
-                height: 220px;
-            }
-
-            63% {
-                margin-left: 232px;
-                margin-top: 160px;
-                width: 240px;
-                height: 220px;
-            }
-
-            66% {
-                margin-left: 240px;
-                margin-top: 160px;
-                width: 240px;
-                height: 220px;
-            }
-
-            69% {
-                margin-left: 232px;
-                margin-top: 160px;
-                width: 240px;
-                height: 220px;
-            }
-
-            72% {
-                margin-left: 240px;
-                margin-top: 160px;
-                width: 240px;
-                height: 220px;
-            }
-
-            100% {
-                margin-left: 50px;
-                margin-top: 160px;
-                width: 240px;
-                height: 220px;
-            }
-        }
-        
-        .box1 {
-            position: relative;
+      .stage {
             top: 150px;
             font-size: 40px;
             text-align: center;
             left: 0px;
             top: 0px;
-            width: 800px;
-            height: 700px;
+            width: 90%;
+            height: 800px;
             background: #ddd;
             border-style: solid;
             border-width: 5px;
             border-color: black;
             overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .wholebody {
+            background: red;
+
+            /* To hide uncomment this*/
+            /* background: #ddd; */
+
+            margin-left: 10px;
+            margin-top: -20px;
+            width: 240px;
+            height: 400px;
+            margin-top: 160px;
+
+            animation: geeks 5s infinite;
+        }
+
+        @keyframes geeks {
+            0% {
+                margin-left: 20%;
+            }
+
+            20% {
+                margin-left: 60%;
+            }
+
+            35% {
+                margin-left: 45%;
+            }
+
+            45% {
+                margin-left: 45%;
+            }
+
+            51% {
+                margin-left: 45%;
+            }
+
+            54% {
+                margin-left: 50%;
+            }
+
+            57% {
+                margin-left: 70%;
+            }
+
+            60% {
+                margin-left: 60%;
+            }
+
+            63% {
+                margin-left: 85%;
+            }
+
+            66% {
+                margin-left: 70%;
+            }
+
+            69% {
+                margin-left: 80%;
+            }
+
+            92% {
+                margin-left: 24%;
+            }
+
+            100% {
+                margin-left: 10%;
+            }
+        }
+        .head {
+            background: white;
+            width: 50%;
+            height: 60px;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+        }
+        .body {
+            background: black;
+            width: 50%;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10%;
         }
     </style>
 </head>
-
 <body>
-    <div class="box1">
-        <div class="box2">
+    <div class="stage">
+
+        <div class="wholebody">
+            <div class="head">
+            </div>
+            <div class="body">
+            </div>
         </div>
     </div>
 
